@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint",
     "build": "rollup -c",
-    "test": "jest -u"
+    "test": "jest -u",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "hooks": {
     "pre-commit": "lint-staged",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "conventional-changelog-cli": "^2.1.0",
     "eslint": "^7.12.1",
     "husky": "^4.3.0",
     "jest": "^26.6.1",
@@ -48,8 +50,8 @@
     ]
   },
   "jest": {
-      "verbose": true,
-      "coverage": true,
-      "testEnvironment": "node"
+    "verbose": true,
+    "coverage": true,
+    "testEnvironment": "node"
   }
 }
