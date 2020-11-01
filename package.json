@@ -1,0 +1,12 @@
+{
+  "name": "javascript-starter",
+  "version": "0.0.1",
+  "description": "A starter template for javascript project.",
+  "main": "index.js",
+  "author": "cjiali <chjiali@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1"
+  }
+}
